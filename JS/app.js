@@ -80,11 +80,12 @@ else if(questionE =='N'){
 
 
 function Q7(){
-for(var i=0; i < 4; i++ ){
-
+    let out =0;
+ for(var i=0; i < 4; i++ ){
     var questionF = prompt("pleas enter a number between 1 and 23")
     if(questionF== 21){
         alert("Correct")
+        out=1;
         Score++;
         break;
     }
@@ -97,6 +98,9 @@ for(var i=0; i < 4; i++ ){
         else{
             alert("follow the rules")
         }
+}
+   if(out == 0 ){
+    alert("the answer is 21")
 }
 }
 
