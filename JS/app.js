@@ -1,4 +1,6 @@
 
+'use strict'
+
 
 var name = prompt("input your name pleas")
 
@@ -88,9 +90,9 @@ for(var i=0; i < 4; i++ ){
     var questionG = prompt("type here please")
 
 
-    var ss=0
-    for(i=0 ; i< 6; i++){
-        for(j=0 ; j < arr.length-1; j++){
+    let ss=0
+    for(let i=0 ; i< 6; i++){
+        for(let  j=0 ; j < arr.length-1; j++){
 
             if(questionG == arr[0] || questionG== arr[1]){
                 alert("you are right")
@@ -107,6 +109,9 @@ for(var i=0; i < 4; i++ ){
         break
     }
     questionG=prompt("try again")
+    }
+    if(ss==0){
+         alert('the correct answers are BMW and Tesla')
     }
 
  alert("your score is "+ Score)
